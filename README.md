@@ -31,9 +31,9 @@ The URL for your notes API is `http://localhost:3000/notes/`.
 
 ### Using the notes API
 
-To get a list of all notes, make a `GET` request to `http://localhost:3000/notes/`.
+-[1] To get a list of all notes, make a `GET` request to `http://localhost:3000/notes/`.
 
-To add a new note, make a `POST` request to `http://localhost:3000/notes/`. You will need to send a body and headers. Your request will look like this:
+-[2] To add a new note, make a `POST` request to `http://localhost:3000/notes/`. You will need to send a body and headers. Your request will look like this:
 
 ```js
 fetch('http://localhost:3000/notes/', {
@@ -49,9 +49,9 @@ fetch('http://localhost:3000/notes/', {
 
 The `headers` attribute lets json-server know you will be sending JSON to it for it to read. The `body` attribute is the JSON you are sending. If you have an object, then you must call `JSON.stringify` with that object.
 
-To edit a note, make a `PATCH` request to `http://localhost:3000/notes/:id` where `:id` is the id of the note. This will also require the same headers and body as the above request.
+- [3] To edit a note, make a `PATCH` request to `http://localhost:3000/notes/:id` where `:id` is the id of the note. This will also require the same headers and body as the above request.
 
-To delete a note, make a `DELETE` request to `http://localhost:3000/notes/:id`.
+-[4] To delete a note, make a `DELETE` request to `http://localhost:3000/notes/:id`.
 
 ## Resources
 
