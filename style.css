@@ -16,6 +16,9 @@
     /* border: 3px solid blue; */
 }
 
+input {
+    border-style: hidden;
+}
 #note-form {
     display: flex;
     flex-direction: column;
@@ -30,20 +33,18 @@
     /* border: 3px solid pink; */
 }
 
-#note-list {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 20px;
-    list-style-type: none;
+:placeholder-shown {
+    outline: none;
 }
-
+::placeholder {
+    color: #808080;
+    text-align: center;
+}
 
 
 .titleField {
     padding: 2px;
-    margin: 2;
+    margin: 1px;
     border-radius: 5px;
     width: 250px;
     text-align: center;
@@ -55,7 +56,7 @@
 
 .inputField {
     padding: 2px;
-    margin: 2px;
+    margin: 1px;
     border-radius: 5px;
     width: 250px;
     text-align: center;
@@ -67,12 +68,26 @@
 .submitButton {
     text-align: center;
     padding: 2px;
-    margin: 2px;
+    margin: 1px;
     border-radius: 5px;
+    width: 250px;
 }
 #submit {
     color: #ffffff;
     text-align: center;
 }
-/* note title, note body, submit buttom, edit-text, update-note, cancel-note */
+
+#note-list {
+    display:flex;
+    flex-direction: column-reverse;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+/* edit-text, update-note, cancel-note */
 

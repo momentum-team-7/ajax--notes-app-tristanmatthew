@@ -89,6 +89,7 @@ function updateNote (element) {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
+                title: noteTitle.value,
                 body: noteBody.value,
                 updated_at: moment().format('MMMM Do YYYY, h:mm;ss a')
             })
