@@ -4,11 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://momentjs.com/downloads/moment.js" defer></script>
   <script src='main.js' defer></script>
-  <title>Notes</title>
+  <title>got notes?</title>
 </head>
 <body>
-  <div id="noteContainer"></div>
-  <button id="nopebutton">DO NOT PUSH THIS BUTTON!</button>
+  <div class="header">got notes?</div>
+  <form id="note-form">
+    <div class="titleField">
+      <input id="inputTitle" type="text" placeholder="got note titles?">
+    </div>
+    <div class="inputField">
+      <input id="inputBody" type="text" placeholder="got notes?">
+    </div>
+    <div class="submitButton">
+        <button id="submit" type="submit">gimme your damn notes?</button>
+    </div>
+  </form>
+  <section id="notes">
+    <ul id="note-list"></ul>
+  </section>
 </body>
 </html>
